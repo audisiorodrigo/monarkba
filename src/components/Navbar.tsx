@@ -71,7 +71,7 @@ export function Navbar({
                 }}
                 aria-current={isActive ? 'page' : undefined}
                 className={`relative py-1 whitespace-nowrap shrink-0 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm ${
-                  isActive ? 'text-[#F5F4F0]' : 'text-[#9A9893] hover:text-[#F5F4F0]'
+                  isActive ? 'text-white' : 'text-[#D8D4DF] hover:text-white'
                 }`}
               >
                 {section.navLabel}
@@ -91,7 +91,7 @@ export function Navbar({
               e.preventDefault();
               handleInfoClick();
             }}
-            className="relative py-1 text-[#9A9893] whitespace-nowrap shrink-0 transition-colors duration-150 hover:text-[#F5F4F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm"
+            className="relative py-1 text-[#D8D4DF] whitespace-nowrap shrink-0 transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm"
           >
             Info
           </a>

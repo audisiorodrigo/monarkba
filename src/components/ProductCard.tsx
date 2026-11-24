@@ -159,7 +159,7 @@ export function ProductCard({
         </div>
 
         {/* Clean Unboxed Metadata (Zero Pills) */}
-        <div className="mt-4 flex items-center gap-2 text-xs text-[#9A9893]">
+        <div className="mt-4 flex items-center gap-2 text-xs text-[#CFCBC4]">
           <span>{categoryLabel}</span>
           <span aria-hidden="true">·</span>
           <span className="truncate">{sizeText}</span>
@@ -170,7 +170,7 @@ export function ProductCard({
           <button
             type="button"
             onClick={() => onInspect(product)}
-            className="text-left font-display text-base font-semibold leading-snug text-[#F5F4F0] transition-colors duration-150 hover:text-[#E11D62] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer"
+            className="text-left font-display text-base font-semibold leading-snug text-white transition-colors duration-150 hover:text-[#FF7EB3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer"
           >
             {product.name}
           </button>
@@ -178,8 +178,8 @@ export function ProductCard({
       </div>
 
       {/* Contiguous Price + Purchase Actions */}
-      <div className="mt-4 flex items-center justify-between gap-3 border-t border-white/[0.06] pt-3.5">
-        <span className="tabular-nums font-mono text-[15px] font-medium text-[#F5F4F0]">
+      <div className="mt-4 flex items-center justify-between gap-3 border-t border-white/[0.08] pt-3.5">
+        <span className="tabular-nums font-mono text-[15px] font-semibold text-white">
           {product.price}
         </span>
 

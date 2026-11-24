@@ -31,15 +31,15 @@ export function Hero({
               className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-[radial-gradient(ellipse_at_center,rgba(6,6,10,0.82)_0%,rgba(6,6,10,0.42)_60%,transparent_85%)]"
             />
             <div>
-              <p className="text-xs font-medium tracking-[0.12em] text-[#9A9893]">
+              <p className="text-xs font-semibold tracking-[0.12em] text-[#F2EFF4]/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                 Buenos Aires · Pedidos por encargo
               </p>
 
-              <h1 className="mt-5 font-display text-[clamp(2.5rem,4.5vw,4.15rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-[#F5F4F0] text-balance">
+              <h1 className="mt-5 font-display text-[clamp(2.5rem,4.5vw,4.15rem)] font-semibold leading-[1.03] tracking-[-0.03em] text-white text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
                 Tu próxima obsesión.
               </h1>
 
-              <p className="mt-5 max-w-[46ch] text-[15px] leading-[1.65] text-[#B4B2AC]">
+              <p className="mt-5 max-w-[46ch] text-[15px] leading-[1.65] text-[#F0EDF2]/95 drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
                 Indumentaria de silueta limpia y joyería en acero y cromo, seleccionadas por encargo en Buenos Aires. Reservá con el 50% de seña y coordiná envío por Correo Argentino o punto de encuentro.
               </p>
 
@@ -56,18 +56,18 @@ export function Hero({
                 <button
                   type="button"
                   onClick={onOpenJewelry}
-                  className="inline-flex min-h-[44px] items-center text-sm font-medium text-[#F5F4F0] underline decoration-white/25 underline-offset-4 whitespace-nowrap shrink-0 transition-colors duration-150 hover:decoration-[#E11D62] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer"
+                  className="inline-flex min-h-[44px] items-center text-sm font-semibold text-white underline decoration-white/45 underline-offset-4 whitespace-nowrap shrink-0 transition-colors duration-150 hover:decoration-[#FF6CA3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]"
                 >
                   Ver joyería (37)
                 </button>
               </div>
             </div>
 
-            <div className="mt-10 border-t border-white/[0.08] pt-6 lg:mt-12">
+            <div className="mt-10 border-t border-white/[0.14] pt-6 lg:mt-12">
               <button
                 type="button"
                 onClick={onScrollToWholesale}
-                className="group inline-flex items-center gap-2 text-xs font-medium text-[#9A9893] transition-colors duration-150 hover:text-[#F5F4F0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer"
+                className="group inline-flex items-center gap-2 text-xs font-medium text-[#E5E1E8] transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E11D62] rounded-sm cursor-pointer drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]"
               >
                 <span>Compra mayorista disponible desde $50.000</span>
                 <ArrowRight
@@ -79,7 +79,7 @@ export function Hero({
           </motion.div>
 
           {/* Right Editorial Photography */}
-          <div className="relative overflow-hidden rounded-xl border border-white/[0.08] bg-[#121216]/80 min-h-[280px] sm:min-h-[380px] lg:col-span-7 lg:min-h-[480px]">
+          <div className="relative overflow-hidden rounded-xl border border-white/[0.12] bg-[#121216]/85 min-h-[280px] sm:min-h-[380px] lg:col-span-7 lg:min-h-[480px]">
             <img
               src="/src/assets/images/hero_monark_editorial_1795492384037.jpg"
               alt="Campaña MonarkBA — Bodysuits y cadenas en acero"
@@ -88,45 +88,45 @@ export function Hero({
             />
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#060609]/85 via-[#060609]/15 to-transparent"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#060609]/90 via-[#060609]/20 to-transparent"
             />
-            <div className="absolute bottom-5 left-5 right-5 flex flex-wrap items-center justify-between gap-2 text-xs text-[#F5F4F0]/85">
+            <div className="absolute bottom-5 left-5 right-5 flex flex-wrap items-center justify-between gap-2 text-xs text-white/95">
               <span className="font-medium tracking-[0.08em]">
                 Colección Nocturna · Acero &amp; Lycra
               </span>
-              <span className="font-mono text-[11px] text-[#B4B2AC]">
+              <span className="font-mono text-[11px] text-[#E5E1E8]">
                 Deslizá para explorar
               </span>
             </div>
           </div>
         </div>
 
-        {/* Full-Width Editorial Service Strip */}
-        <div className="mt-10 grid grid-cols-1 gap-6 border-t border-white/[0.08] pt-8 sm:grid-cols-3 lg:mt-14">
+        {/* Full-Width Editorial Service Strip with subtle readability backing */}
+        <div className="mt-10 grid grid-cols-1 gap-6 rounded-xl border border-white/[0.08] bg-[#06060A]/78 px-5 py-6 sm:grid-cols-3 lg:mt-14 lg:px-7">
           <div className="flex flex-col gap-1.5">
-            <span className="tabular-nums font-mono text-xs text-[#E11D62]">01</span>
-            <h2 className="text-sm font-semibold text-[#F5F4F0]">
+            <span className="tabular-nums font-mono text-xs font-semibold text-[#FF7EB3]">01</span>
+            <h2 className="text-sm font-semibold text-white">
               Reserva con 50% de seña
             </h2>
-            <p className="text-[13px] leading-relaxed text-[#9A9893]">
+            <p className="text-[13px] leading-relaxed text-[#DDD9E0]">
               Confirmás tu encargo con el 50% y abonás el saldo restante al recibir tus prendas.
             </p>
           </div>
           <div className="flex flex-col gap-1.5">
-            <span className="tabular-nums font-mono text-xs text-[#E11D62]">02</span>
-            <h2 className="text-sm font-semibold text-[#F5F4F0]">
+            <span className="tabular-nums font-mono text-xs font-semibold text-[#FF7EB3]">02</span>
+            <h2 className="text-sm font-semibold text-white">
               Correo Argentino o entrega
             </h2>
-            <p className="text-[13px] leading-relaxed text-[#9A9893]">
+            <p className="text-[13px] leading-relaxed text-[#DDD9E0]">
               Despachos a todo el país por Correo Argentino o retiro en punto de encuentro coordinado.
             </p>
           </div>
           <div className="flex flex-col gap-1.5">
-            <span className="tabular-nums font-mono text-xs text-[#E11D62]">03</span>
-            <h2 className="text-sm font-semibold text-[#F5F4F0]">
+            <span className="tabular-nums font-mono text-xs font-semibold text-[#FF7EB3]">03</span>
+            <h2 className="text-sm font-semibold text-white">
               Mayorista desde $50.000
             </h2>
-            <p className="text-[13px] leading-relaxed text-[#9A9893]">
+            <p className="text-[13px] leading-relaxed text-[#DDD9E0]">
               Armá tu pedido mayorista o consultanos directo por WhatsApp para listas y stock.
             </p>
           </div>

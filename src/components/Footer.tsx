@@ -7,20 +7,20 @@ interface FooterProps {
 
 export function Footer({ onSelectSection, onScrollToInfo }: FooterProps) {
   return (
-    <footer className="border-t border-white/[0.08] bg-[#07070A]/80">
+    <footer className="border-t border-white/[0.1] bg-[#07070B]/90">
       <div className="mx-auto flex max-w-[1360px] flex-col gap-6 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
         <div className="flex flex-col gap-1">
-          <span className="font-display text-sm font-semibold tracking-[0.14em] text-[#F5F4F0]">
+          <span className="font-display text-sm font-semibold tracking-[0.14em] text-white">
             {BRAND_CONFIG.name}
           </span>
-          <span className="text-xs text-[#9A9893]">
+          <span className="text-xs text-[#D8D4DF]">
             {BRAND_CONFIG.footer} · {BRAND_CONFIG.tagline}
           </span>
         </div>
 
         <nav
           aria-label="Enlaces del pie de página"
-          className="flex flex-wrap items-center gap-6 text-xs text-[#9A9893]"
+          className="flex flex-wrap items-center gap-6 text-xs text-[#D8D4DF]"
         >
           {CATALOG_SECTIONS.map((section) => (
             <a
