@@ -1,0 +1,6 @@
+{
+  "name": "MONARKBA",
+  "description": "Tu próxima obsesión — Catálogo oficial de indumentaria y joyería de MonarkBA en Buenos Aires.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
